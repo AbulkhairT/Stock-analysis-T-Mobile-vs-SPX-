@@ -14,22 +14,22 @@ Languages and packages used: Python, Pandas, and other libraries
 
 
 Assigning the True Labels to the document to be able to manipulate this variable for both stocks: 
-<img width="800" alt="Screenshot 2023-10-03 at 2 33 29 PM" src="https://github.com/AbulkhairT/Stock-analysis-T-Mobile-vs-SPX-/assets/125773898/2fdb333f-efda-4f6d-9088-cf300414121f">
+<img width="1000" alt="Screenshot 2023-10-03 at 2 33 29 PM" src="https://github.com/AbulkhairT/Stock-analysis-T-Mobile-vs-SPX-/assets/125773898/2fdb333f-efda-4f6d-9088-cf300414121f">
 
 Calculate the probability that tomorrow is going to be positive day, meaning the stock will grow. In case with T-Mobile ( TMUS) it is 52% probability of a positive day
-<img width="800" alt="Screenshot 2023-10-03 at 2 34 41 PM" src="https://github.com/AbulkhairT/Stock-analysis-T-Mobile-vs-SPX-/assets/125773898/ba1f4b97-b666-4f89-80cf-8d3dd55b2c38">
+<img width="1000" alt="Screenshot 2023-10-03 at 2 34 41 PM" src="https://github.com/AbulkhairT/Stock-analysis-T-Mobile-vs-SPX-/assets/125773898/ba1f4b97-b666-4f89-80cf-8d3dd55b2c38">
 
 Calculates the total outcome of 3 consequetive days, in case 2 days were negative, what is the probability that the 3rd day will be positive? 
-<img width="800" alt="Screenshot 2023-10-03 at 2 38 32 PM" src="https://github.com/AbulkhairT/Stock-analysis-T-Mobile-vs-SPX-/assets/125773898/398f224c-722f-4996-ba29-091c12660de4">
+<img width="1000" alt="Screenshot 2023-10-03 at 2 38 32 PM" src="https://github.com/AbulkhairT/Stock-analysis-T-Mobile-vs-SPX-/assets/125773898/398f224c-722f-4996-ba29-091c12660de4">
 
 Calculates the total outcome of 3 consequetive days, in case 2 days were positive, what is the probability that the 3rd day will be negative? 
-<img width="800" alt="Screenshot 2023-10-03 at 2 41 30 PM" src="https://github.com/AbulkhairT/Stock-analysis-T-Mobile-vs-SPX-/assets/125773898/7e6659f9-1cfd-4ff0-9567-a6ab2730e2bc">
+<img width="1000" alt="Screenshot 2023-10-03 at 2 41 30 PM" src="https://github.com/AbulkhairT/Stock-analysis-T-Mobile-vs-SPX-/assets/125773898/7e6659f9-1cfd-4ff0-9567-a6ab2730e2bc">
 
 This part predicts stock trading labels for the years 2020 to 2022 based on patterns observed in the years 2017 to 2019, different window slides were combined to improve accuracy
-<img width="800" alt="Screenshot 2023-10-03 at 2 46 15 PM" src="https://github.com/AbulkhairT/Stock-analysis-T-Mobile-vs-SPX-/assets/125773898/ea640bcf-4772-4d7a-bab2-74b9f677609a">
+<img width="1000" alt="Screenshot 2023-10-03 at 2 46 15 PM" src="https://github.com/AbulkhairT/Stock-analysis-T-Mobile-vs-SPX-/assets/125773898/ea640bcf-4772-4d7a-bab2-74b9f677609a">
 
 Calculates accuracy of our W's, The W value (highest) for TMUS is: 3 and The value (highest) for SP500 is: 2
-<img width="800" alt="Screenshot 2023-10-03 at 2 47 01 PM" src="https://github.com/AbulkhairT/Stock-analysis-T-Mobile-vs-SPX-/assets/125773898/8e062112-4525-4991-9144-f8a224a2399e">
+<img width="1000" alt="Screenshot 2023-10-03 at 2 47 01 PM" src="https://github.com/AbulkhairT/Stock-analysis-T-Mobile-vs-SPX-/assets/125773898/8e062112-4525-4991-9144-f8a224a2399e">
 
 Then Calculate values such as: TP FP, TN, FN, TPR, TNR to calculate the perfomance of the prediction model. While the model has positive aspects, it also made mistakes. For instance: 
 TPR fpr W2 is 65% meaning it was able to correctly predict positive days in 64% of cases, while only 34% for the negative days. In conclusion, the W2 had the best perfromance for the 
@@ -104,7 +104,7 @@ TPR: 0.0
 TNR: 1.0
 
 Used buy and hold strategy for both stocks and uses W2 as the hyperparameter since it was the best performing factor. It then visualizes both stocks to show the difference in profits/losses: 
-<img width="800" alt="Screenshot 2023-10-03 at 3 01 12 PM" src="https://github.com/AbulkhairT/Stock-analysis-T-Mobile-vs-SPX-/assets/125773898/911db688-3d75-406f-9f69-cb57b9235c97">
+<img width="1000" alt="Screenshot 2023-10-03 at 3 01 12 PM" src="https://github.com/AbulkhairT/Stock-analysis-T-Mobile-vs-SPX-/assets/125773898/911db688-3d75-406f-9f69-cb57b9235c97">
 
 Conclusion: 
 W2 turned out to be the most balanced predictor for both stocks in this case. For W3, W4 and ensemble strategy the data might have been too homegeneous, perhaps it needed more diverse dataset to be trained on. 
